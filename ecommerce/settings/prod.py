@@ -1,7 +1,7 @@
 from .base import *
 import dj_database_url
 
-ALLOWED_HOSTS = ["i-commerce-bags-of-fun-humancode.c9users.io", "i-commerce-bags-of-fun-humancode.c9users.io"]
+ALLOWED_HOSTS = ["i-commerce-bags-of-fun-humancode.c9users.io", "icommerce-bagsoffun.herokuapp.com"]
 
 
 
