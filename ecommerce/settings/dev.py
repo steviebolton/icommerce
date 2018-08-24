@@ -1,6 +1,6 @@
 from .base import *
 
-ALLOWED_HOSTS = ["i-commerce-bags-of-fun-humancode.c9users.io"]
+ALLOWED_HOSTS = ["i-commerce-bags-of-fun-humancode.c9users.io", "i-commerce-bags-of-fun-humancode.c9users.io"]
 
 DATABASES = {
     'default': {

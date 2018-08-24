@@ -1,7 +1,7 @@
 from .base import *
 import dj_database_url
 
-PROD_HOSTS = ["icommerce-bagsoffun.herokuapp.com"]
+ALLOWED_HOSTS = ["i-commerce-bags-of-fun-humancode.c9users.io", "i-commerce-bags-of-fun-humancode.c9users.io"]
 
 
 
@@ -25,6 +25,9 @@ MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
+
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
